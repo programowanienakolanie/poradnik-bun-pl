@@ -14,7 +14,7 @@ Jakie są plusy Buna?
 - Szybka kompilacja
 - Wbudowany Serwer HTTP
 - Zintegrowane Zarządzanie Pakietami (kompatybilny z npm)
-- Wysoka wydajność (korzysta z Rusta i Ziga)
+- Wysoka wydajność (korzysta z Ziga)
 
 Jak zainstalować: Bun.js
 
