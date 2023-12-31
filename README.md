@@ -176,7 +176,22 @@ https://www.postgresql.org/download/
 
    Po zainstalowaniu PostgreSQL możesz uruchomić polecenie `psql` w wierszu poleceń, aby połączyć się z lokalnym serwerem baz danych
 
-jak mamy działającego postgresa to możemy stworzyć naszą bazę danych
+   Jeżeli to nie zadziała, albo dostaniecie błąd typu:
+   
+   ```bash
+   psql: error: connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  role "nazwa_uzytkownika" does not exist
+   ```
+
+   To możliwe, że wasza baza danych działa na innym porcie. 
+   Rozwinięcie polecenia w ten sposób powinno naprawić problem:
+
+   ```bash
+   psql -U nazwa_uzytkownika -p 5434
+   ```
+
+  
+
+Gdy mamy już działającego postgresa to możemy stworzyć naszą bazę danych
 i użyć paczki "pg"
 
 ```cli
